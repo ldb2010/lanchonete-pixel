@@ -4,83 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lanchonete Pixel</title>
-  <!-- VERSÃO FINAL: viewport + Flexbox + Grid + media query + imagens e tipografia fluidas. -->
-  <style>
-    /* ===== Estilo base (igual em todas as versões) ===== */
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: "Trebuchet MS", system-ui, sans-serif; background: #fff6ea; color: #2b1a0f; line-height: 1.4; font-size: 16px; }
-    a { color: inherit; text-decoration: none; }
-    h2 { margin: 0 0 12px; font-size: 22px; }
-    .topo { background: #c9302c; color: #fff; padding: 14px 20px; }
-    .logo { font-weight: 800; font-size: 20px; }
-    .logo span { display: inline-block; width: 14px; height: 14px; background: #ffc93c; margin-right: 8px; vertical-align: -1px; }
-    .menu a { font-weight: 600; }
-    .hero { padding: 20px; }
-    .hero h1 { margin: 0 0 10px; line-height: 1.05; }
-    .hero p { margin: 0; color: #7a5a44; }
-    .hero img { display: block; border-radius: 12px; }
-    .btn-pedido { display: inline-block; margin-top: 14px; background: #ffc93c; color: #2b1a0f; font-weight: 800; padding: 12px 22px; border-radius: 999px; }
-    .card { background: #fff; border: 2px solid #f0dcc2; border-radius: 12px; padding: 14px; }
-    .card h3 { margin: 0 0 4px; font-size: 17px; }
-    .card p { margin: 0; color: #7a5a44; font-size: 14px; }
-    .card .preco, .preco { font-weight: 800; color: #c9302c; }
-    .promo { background: #2b1a0f; color: #ffe9b8; border-radius: 12px; padding: 16px; }
-    .promo .preco { color: #ffc93c; }
-    .rodape { padding: 20px; color: #7a5a44; font-size: 13px; }
-    /* ===== Layout RESPONSIVO (mobile-first) ===== */
-    /* Flexbox: o menu quebra linha quando não cabe */
-    .topo { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
-    .menu { display: flex; flex-wrap: wrap; gap: 1rem; }
-    /* clamp(): o título cresce com a tela, entre 1.5rem e 3rem */
-    .hero h1 { font-size: clamp(1.5rem, 5vw, 3rem); }
-    /* Imagem nunca fica mais larga que a caixa */
-    img { max-width: 100%; height: auto; }
-    /* Grid: uma coluna no celular... */
-    .layout { display: grid; grid-template-columns: 1fr; gap: 16px; padding: 0 20px 20px; }
-    /* ...e o cardápio calcula sozinho quantas colunas cabem */
-    .cardapio { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
-    /* Media query: a partir de 768px, conteúdo + barra lateral lado a lado */
-    @media (min-width: 768px) {
-      .layout { grid-template-columns: 3fr 1fr; }
-      .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
-    }
-  </style>
+  <!-- Atalho: abre o site já consertado, sem sincronia (plano B / revelação sem internet). -->
+  <meta http-equiv="refresh" content="0; url=./?s=9&fixo=1">
+  <script>location.replace('./?s=9&fixo=1');</script>
 </head>
-<body>
-  <header class="topo">
-    <a class="logo" href="#"><span></span>Lanchonete Pixel</a>
-    <nav class="menu"><a href="#">Início</a><a href="#cardapio">Cardápio</a><a href="#promo">Promoções</a><a href="#contato">Contato</a></nav>
-  </header>
-
-  <section class="hero">
-    <div>
-      <h1>Hambúrguer artesanal, montado pixel por pixel</h1>
-      <p>Pedidos de terça a domingo.</p>
-      <a class="btn-pedido" href="#">Fazer pedido</a>
-    </div>
-    <img src="burger.svg" width="900" height="560" alt="Hambúrguer artesanal da Lanchonete Pixel">
-  </section>
-
-  <main class="layout">
-    <section id="cardapio">
-      <h2>Cardápio</h2>
-      <div class="cardapio">
-      <article class="card"><h3>Pixel Burger</h3><p>Pão brioche, blend 160g, queijo</p><p class="preco">R$ 29,90</p></article>
-      <article class="card"><h3>Cheese Byte</h3><p>Duplo cheddar e cebola caramelizada</p><p class="preco">R$ 32,90</p></article>
-      <article class="card"><h3>Batata 8-bit</h3><p>Porção crocante com páprica</p><p class="preco">R$ 16,90</p></article>
-      <article class="card"><h3>Milk-shake RGB</h3><p>Morango, baunilha e chocolate</p><p class="preco">R$ 18,90</p></article>
-      <article class="card"><h3>Refri Retrô</h3><p>Lata 350ml</p><p class="preco">R$ 7,90</p></article>
-      <article class="card"><h3>Veggie Vetor</h3><p>Hambúrguer de grão-de-bico</p><p class="preco">R$ 27,90</p></article>
-      </div>
-    </section>
-    <aside class="promo" id="promo">
-      <h2>Promoção do dia</h2>
-      <p>Combo Pixel: burger + batata + refri</p>
-      <p class="preco">R$ 39,90</p>
-    </aside>
-  </main>
-
-  <footer class="rodape" id="contato">© Lanchonete Pixel · site de demonstração de um trabalho escolar</footer>
-
-</body>
+<body><a href="./?s=9&fixo=1">Abrir a Lanchonete Pixel</a></body>
 </html>
